@@ -9,37 +9,58 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script type="text/javascript" src="assets/js/jquery-3.4.1.min.js" ></script>
     <script type="text/javascript" src="assets/js/game.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 
 </head>
 <body>
+    <header>
+         <h1>Crystal Game</h1>
+    </header>
     <div class="container">
-        <div class="randomNumberContainer">
-            <h2>Current Number:</h2> <span class="currentNumber"></span>
+        
+        <div class="game-information col-1-2">
+            <div class="rules">
+                <h2>Rules</h2>
+                <ul>
+                    <li>You will be given a random number from the start of the game.</li>
+                    <li>There are four crystals below. By clicking on a crystal you will add a specific ammount of points to your total score.</li>
+                    <li>You will win the game by matching your total score to the current number. You will lose the game if your total score goes above the current number</li>
+                    <li>The value of each crystal is hidden from you until your click on it.</li>
+                    <li>Each time the grame starts, the game will change the values of each cyrtal</li>
+                </ul>
+            </div>
+            <div class="numbers-container">
+                <div class="randomNumberContainer">
+                    <h2>Current Number:
+                        <span class="currentNumber"></span>
+                    </h2> 
+                </div>
+                <div class="wins-losses-container">
+                    <h2>
+                        Wins:<span class="number-of-wins">0</span>
+                    </h2>
+                    <h2>
+                        Losses: <span class="number-of-losses">0</span>
+                    </h2>
+                </div>
+                <h2>
+                    Total Times Played: <span class="total-times-played">0</span>
+                </h2>
+                <div class="score-header">
+                    <h2>Your Total Score: <span class="score-container"></span></h2>
+                </div>
+            </div>
         </div>
-        <div class="wins-losses-container">
-            <h2>
-                Wins:<span class="number-of-wins">0</span>
-            </h2>
-        </div>
-        <h2>
-            Losses: <span class="number-of-losses">0</span>
-        </h2>
-        <h2>
-            Total Times Played: <span class="total-times-played">0</span>
-        </h2>
-        <div class="crystal-container">
-            <img class="first-crystal" src="assets/images/ruby.png">
-            <img class="second-crystal" src="assets/images/sapphire.png">
-            <img class="third-crystal" src="assets/images/emeral.png">
-            <img class="fourth-crystal" src="assets/images/diamond.png">
-        </div>
-        <div class="score-header">
-            Your Total Score:
-        </div>
-        <div class="score-container">
-
+        <div class="crystal-container col-1-2">
+            <img class="first-crystal" src="assets/images/Fire-crystal.gif">
+            <img class="second-crystal" src="assets/images/Water-crystal.gif">
+            <img class="third-crystal" src="assets/images/Earth-crystal.gif">
+            <img class="fourth-crystal" src="assets/images/Wind-crystal.gif">
         </div>
     </div>
+    <footer>
+        <audio id="player_audio" src="assets/music/culex.mp4" controls loop></audio>
+    </footer>
 
     
 </body>

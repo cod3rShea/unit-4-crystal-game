@@ -1,9 +1,68 @@
-body {
-    background-color: #000;
-    color: #fff;
+h1 {
+    border: 6px white dotted;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
 }
-
+h2 {
+    margin-bottom: 20px;
+}
 img {
     max-width: 120px;
     height: auto;
+}
+
+li {
+    margin-bottom: 20px;
+    line-height: 1.5;
+
+}
+
+html {
+    background-color: #000;
+    background-image: url('../../assets/images/stardust.png');
+}
+body {
+   
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    padding: 0 20px;
+
+}
+
+header {
+    margin-bottom: 70px;
+}
+
+.container {
+    display: flex;
+
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
+.crystal-container.col-1-2 {
+    text-align: center;
+    background-image: url(../../assets/images/Culex.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.crystal-container img {
+    margin: 10px;
+}
+
+.numbers-container {
+    padding: 20px;
+    border: 6px white dotted;
+}
+
+footer {
+    margin-top: 20px;
+    position: sticky;
+    bottom: 0;
 }

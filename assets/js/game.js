@@ -31,9 +31,13 @@ $( document ).ready(function() {
         
         $('.score-container').html(totalScore);
         $('.currentNumber').html(startingNumber);
-
         $('.total-times-played').html(totalTimesPlayed);
     }
+
+    //
+    var vid = document.getElementById("player_audio"); 
+
+    vid.play();
 
     // win function to add the win score and reset the game
     function win() {
